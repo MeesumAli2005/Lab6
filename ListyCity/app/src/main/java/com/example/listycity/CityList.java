@@ -59,4 +59,10 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+    @Override
+    public int hashCode() {
+    return city.hashCode() + province.hashCode();
+    }
+}
 }
